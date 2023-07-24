@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: jenkins-svc
 spec:
+  externalTrafficPolicy: Local #https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/instance-navigation-often-fails-with-crumb-issuer-errors
   selector:
     app: jenkins
   ports:
